@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Order Confirmed</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    background:linear-gradient(135deg,#fdfbfb,#ebedee);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    width:420px;
+    text-align:center;
+}
+
+h1{
+    color:#d35400;
+}
+
+p{
+    font-size:17px;
+}
+
+.price{
+    font-size:24px;
+    font-weight:bold;
+    margin-top:15px;
+    color:#27ae60;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🥟 Order Placed!</h1>
+
+<p><b>Name:</b> <span th:text="${name}"></span></p>
+<p><b>Momo Type:</b> <span th:text="${momoType}"></span></p>
+<p><b>Quantity:</b> <span th:text="${quantity}"></span></p>
+
+<p class="price">Total ₹ <span th:text="${total}"></span></p>
+
+<p>Thank you for ordering ❤️</p>
+
+</div>
+
+</body>
+</html>

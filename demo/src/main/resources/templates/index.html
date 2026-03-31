@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Momo House</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    background:linear-gradient(135deg,#ffecd2,#fcb69f);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:22px;
+    box-shadow:0 12px 35px rgba(0,0,0,0.25);
+    width:420px;
+}
+
+h1{
+    text-align:center;
+    color:#c0392b;
+}
+
+.tagline{
+    text-align:center;
+    margin-bottom:20px;
+    color:#555;
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    margin-bottom:16px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    font-size:15px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(90deg,#ff416c,#ff4b2b);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🥟 Momo House</h1>
+<p class="tagline">Steamed with love, served with spice</p>
+
+<form action="/order" method="post">
+
+<label>Your Name</label>
+<input type="text" name="name" required>
+
+<label>Momo Type</label>
+<select name="momoType">
+<option>Veg Momo</option>
+<option>Chicken Momo</option>
+<option>Paneer Momo</option>
+<option>Cheese Corn Momo</option>
+</select>
+
+<label>Quantity (plates)</label>
+<input type="number" name="quantity" min="1" required>
+
+<button type="submit">Order Now 🥢</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
